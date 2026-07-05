@@ -10,9 +10,23 @@ import {
 function stripHtml(value: string): string {
   return value
     .replaceAll(/<br\s*\/?>/gi, "\n")
+    .replaceAll(/<\/(mainText|stats|attention|passive|active|rules|flavorText)>/gi, "\n")
+    .replaceAll(/<(mainText|stats|attention|passive|active|rules|flavorText)[^>]*>/gi, "")
+    .replaceAll(/<br\s*\/?>/gi, "\n")
     .replaceAll(/<[^>]*>/g, "")
     .replaceAll("&nbsp;", " ")
+    .replaceAll("&amp;", "&")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&quot;", "\"")
+    .replaceAll("&#39;", "'")
+    .replaceAll(/&#x27;/gi, "'")
+    .replaceAll(/\n{3,}/g, "\n\n")
     .trim();
+}
+
+function resolveItemNames(itemIds: string[] | undefined, items: Record<string, { name: string }>): string[] {
+  return (itemIds ?? []).map((itemId) => items[itemId]?.name ?? itemId);
 }
 
 export class DataDragonItemProvider implements LeagueItemPrimaryProvider {
@@ -41,7 +55,9 @@ export class DataDragonItemProvider implements LeagueItemPrimaryProvider {
       gold: item.gold,
       stats: item.stats ?? {},
       from: item.from ?? [],
+      fromNames: resolveItemNames(item.from, items.data),
       into: item.into ?? [],
+      intoNames: resolveItemNames(item.into, items.data),
       maps: item.maps ?? {},
       tags: item.tags ?? [],
       imageUrl: this.dataDragon.itemImageUrl(version, item.image.full),

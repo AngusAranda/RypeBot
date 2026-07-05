@@ -13,7 +13,9 @@ export type LeagueItem = {
   };
   stats: Record<string, number>;
   from: string[];
+  fromNames: string[];
   into: string[];
+  intoNames: string[];
   maps: Record<string, boolean>;
   tags: string[];
   imageUrl: string;
