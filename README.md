@@ -86,7 +86,7 @@ Current integration:
 League slash commands:
 
 - `/lol-item item` looks up League item details from Riot Data Dragon and returns source links.
-- `/lol-player player region` resolves a full Riot ID through Account-V1, then uses the returned PUUID for League profile lookup.
+- `/lol-player player tagline region` resolves a Riot ID through Account-V1, then builds a multi-embed player report from Summoner-V4, League-V4, Champion-Mastery-V4, Match-V5, and live game status when available.
 
 League item provider architecture:
 
@@ -100,8 +100,10 @@ League player examples:
 
 - `/lol-player player: SomeName#NA1 region: na1`
 - `/lol-player player: Some Name#1234 region: na1`
+- `/lol-player player: SomeName tagline: NA1 region: na1`
+- `/lol-player player: SomeName` uses `LOL_DEFAULT_REGION` and `LOL_DEFAULT_TAGLINE` when configured.
 
-Riot IDs require both the game name and tagline because names are not globally unique. Name-only player input returns a helpful prompt instead of guessing.
+Riot IDs require both the game name and tagline because names are not globally unique. Name-only player input tries the configured default tagline when present, then asks for the exact Riot ID if Riot cannot find a match.
 
 Supported League platform regions:
 
@@ -110,7 +112,7 @@ Supported League platform regions:
 - Asia route: `kr`, `jp1`
 - SEA route: `oc1`, `ph2`, `sg2`, `th2`, `tw2`, `vn2`
 
-League player lookup requires `RIOT_API_KEY` in the local `.env`. Keep real Riot keys out of commits and only document the variable in `.env.example`.
+League player lookup requires `RIOT_API_KEY` in the local `.env`. Optional defaults are `LOL_DEFAULT_REGION`, `LOL_DEFAULT_REGIONAL_ROUTING`, and `LOL_DEFAULT_TAGLINE`. Keep real Riot keys out of commits and only document variables in `.env.example`.
 
 ---
 

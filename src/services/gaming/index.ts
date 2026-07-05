@@ -42,6 +42,7 @@ export type { ParsedRiotIdInput } from "./riot/riotIdParser.js";
 export {
   getRegionalRouteForPlatform,
   normalizeRiotPlatformRegion,
+  normalizeRiotRegionalRoute,
   riotPlatformApiBaseUrl,
   riotPlatformRegions,
   riotRegionalApiBaseUrl

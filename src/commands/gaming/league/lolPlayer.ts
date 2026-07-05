@@ -80,6 +80,10 @@ function configuredDefaultTagline(): string | undefined {
   return process.env.LOL_DEFAULT_TAGLINE;
 }
 
+function configuredDefaultRegionalRouting(): string | undefined {
+  return process.env.LOL_DEFAULT_REGIONAL_ROUTING;
+}
+
 export const lolPlayerCommand = {
   data: new SlashCommandBuilder()
     .setName("lol-player")
@@ -108,7 +112,8 @@ export const lolPlayerCommand = {
   async execute(interaction: ChatInputCommandInteraction): Promise<void> {
     const player = interaction.options.getString("player", true);
     const explicitTagline = interaction.options.getString("tagline");
-    const region = interaction.options.getString("region") ?? configuredDefaultRegion();
+    const explicitRegion = interaction.options.getString("region");
+    const region = explicitRegion ?? configuredDefaultRegion();
     const parsedPlayer = parseRiotIdInput(player);
     const tagLine = parsedPlayer.tagLine ?? explicitTagline ?? configuredDefaultTagline();
 
@@ -119,11 +124,21 @@ export const lolPlayerCommand = {
       return;
     }
 
+    const usedDefaultTagline = !parsedPlayer.tagLine && !explicitTagline && Boolean(configuredDefaultTagline());
+    const regionalRouteOverride = explicitRegion ? undefined : configuredDefaultRegionalRouting();
+
     try {
-      const profile = await leaguePlayerService.lookupPlayer(parsedPlayer.gameName, tagLine, region);
+      const profile = await leaguePlayerService.lookupPlayer(parsedPlayer.gameName, tagLine, region, regionalRouteOverride);
       await interaction.editReply({ embeds: leaguePlayerService.buildPlayerEmbedPages(profile) });
     } catch (error) {
       if (error instanceof LeagueServiceError) {
+        if (error.code === "account-not-found" && usedDefaultTagline) {
+          await interaction.editReply(
+            `I tried **${parsedPlayer.gameName}#${tagLine}** using the configured default tagline, but Riot did not find that account. Please provide the exact Riot ID as \`GameName#TagLine\`.`
+          );
+          return;
+        }
+
         await interaction.editReply(playerErrorMessage(error));
         return;
       }

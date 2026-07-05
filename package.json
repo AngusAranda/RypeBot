@@ -18,7 +18,9 @@
     "permissions:dry-run": "tsx src/scripts/advancedPermissions.ts --dry-run",
     "permissions:deploy": "tsx src/scripts/advancedPermissions.ts --deploy",
     "role-permissions:dry-run": "tsx src/scripts/rolePermissions.ts --dry-run",
-    "role-permissions:deploy": "tsx src/scripts/rolePermissions.ts --deploy"
+    "role-permissions:deploy": "tsx src/scripts/rolePermissions.ts --deploy",
+    "lol:player:debug": "tsx src/scripts/lolPlayerDebug.ts",
+    "lol:player:test": "npm run build"
   },
   "dependencies": {
     "discord.js": "^14.16.3",

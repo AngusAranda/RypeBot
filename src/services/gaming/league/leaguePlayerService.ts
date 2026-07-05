@@ -3,6 +3,7 @@ import { RiotHttpClient, MissingRiotApiKeyError, RiotApiError } from "../riot/ri
 import {
   getRegionalRouteForPlatform,
   normalizeRiotPlatformRegion,
+  normalizeRiotRegionalRoute,
   riotPlatformApiBaseUrl,
   riotRegionalApiBaseUrl,
   RiotPlatformRegion,
@@ -92,9 +93,14 @@ export class LeaguePlayerService {
     private readonly dataDragon = new LeagueDataDragonService()
   ) {}
 
-  async getPlayerProfile(gameName: string, tagLine: string, region: string): Promise<LeaguePlayerProfile> {
+  async getPlayerProfile(
+    gameName: string,
+    tagLine: string,
+    region: string,
+    regionalRouteOverride?: string
+  ): Promise<LeaguePlayerProfile> {
     const platformRegion = this.resolvePlatformRegion(region);
-    const regionalRoute = getRegionalRouteForPlatform(platformRegion);
+    const regionalRoute = this.resolveRegionalRoute(platformRegion, regionalRouteOverride);
     const account = await this.resolveRiotAccount(gameName, tagLine, regionalRoute);
     const summoner = await this.getSummonerProfile(account.puuid, platformRegion);
     const version = await this.dataDragon.getLatestVersion();
@@ -108,9 +114,14 @@ export class LeaguePlayerService {
     };
   }
 
-  async lookupPlayer(gameName: string, tagLine: string, region: string): Promise<PlayerLookupResult> {
+  async lookupPlayer(
+    gameName: string,
+    tagLine: string,
+    region: string,
+    regionalRouteOverride?: string
+  ): Promise<PlayerLookupResult> {
     const platformRegion = this.resolvePlatformRegion(region);
-    const regionalRoute = getRegionalRouteForPlatform(platformRegion);
+    const regionalRoute = this.resolveRegionalRoute(platformRegion, regionalRouteOverride);
     const account = await this.resolveRiotAccount(gameName, tagLine, regionalRoute);
     const [summoner, rankedEntries, topChampionMasteries, recentMatches, liveGameStatus, version] = await Promise.all([
       this.getSummonerProfile(account.puuid, platformRegion),
@@ -163,24 +174,36 @@ export class LeaguePlayerService {
   }
 
   async getRankedEntries(puuid: string, platformRegion: RiotPlatformRegion): Promise<RankedEntry[]> {
-    return await this.safeRiotRequest(
-      () => this.riotClient.getJson<RankedEntry[]>(
+    try {
+      return await this.riotClient.getJson<RankedEntry[]>(
         riotPlatformApiBaseUrl(platformRegion),
         `/lol/league/v4/entries/by-puuid/${encodeURIComponent(puuid)}`
-      ),
-      "riot-unavailable"
-    );
+      );
+    } catch (error) {
+      if (error instanceof RiotApiError && error.status === 404) {
+        return [];
+      }
+
+      return await this.handleRiotError(error, "riot-unavailable");
+    }
   }
 
   async getTopChampionMasteries(puuid: string, platformRegion: RiotPlatformRegion, count = 5): Promise<ChampionMasterySummary[]> {
-    const masteries = await this.safeRiotRequest(
-      () => this.riotClient.getJson<RiotChampionMasteryDto[]>(
+    let masteries: RiotChampionMasteryDto[];
+
+    try {
+      masteries = await this.riotClient.getJson<RiotChampionMasteryDto[]>(
         riotPlatformApiBaseUrl(platformRegion),
         `/lol/champion-mastery/v4/champion-masteries/by-puuid/${encodeURIComponent(puuid)}/top`,
         { query: { count } }
-      ),
-      "riot-unavailable"
-    );
+      );
+    } catch (error) {
+      if (error instanceof RiotApiError && error.status === 404) {
+        return [];
+      }
+
+      return await this.handleRiotError(error, "riot-unavailable");
+    }
 
     return await Promise.all(masteries.map(async (mastery) => ({
       championId: mastery.championId,
@@ -192,26 +215,40 @@ export class LeaguePlayerService {
   }
 
   async getRecentMatches(puuid: string, regionalRoute: RiotRegionalRoute, count = 10): Promise<RecentMatchSummary[]> {
-    const matchIds = await this.safeRiotRequest(
-      () => this.riotClient.getJson<string[]>(
+    let matchIds: string[];
+
+    try {
+      matchIds = await this.riotClient.getJson<string[]>(
         riotRegionalApiBaseUrl(regionalRoute),
         `/lol/match/v5/matches/by-puuid/${encodeURIComponent(puuid)}/ids`,
         { query: { start: 0, count } }
-      ),
-      "match-data-unavailable"
-    );
+      );
+    } catch (error) {
+      if (error instanceof RiotApiError && [403, 404].includes(error.status)) {
+        return [];
+      }
+
+      return await this.handleRiotError(error, "match-data-unavailable");
+    }
 
     const matches = await Promise.all(matchIds.map((matchId) =>
-      this.safeRiotRequest(
-        () => this.riotClient.getJson<RiotMatchDto>(
-          riotRegionalApiBaseUrl(regionalRoute),
-          `/lol/match/v5/matches/${encodeURIComponent(matchId)}`
-        ),
-        "match-data-unavailable"
-      )
+      this.riotClient.getJson<RiotMatchDto>(
+        riotRegionalApiBaseUrl(regionalRoute),
+        `/lol/match/v5/matches/${encodeURIComponent(matchId)}`
+      ).catch((error) => {
+        if (error instanceof RiotApiError && [403, 404].includes(error.status)) {
+          return undefined;
+        }
+
+        throw error;
+      })
     ));
 
     return matches.flatMap((match) => {
+      if (!match) {
+        return [];
+      }
+
       const participant = match.info.participants.find((candidate) => candidate.puuid === puuid);
 
       if (!participant) {
@@ -365,6 +402,14 @@ export class LeaguePlayerService {
     }
 
     return platformRegion;
+  }
+
+  private resolveRegionalRoute(platformRegion: RiotPlatformRegion, regionalRouteOverride?: string): RiotRegionalRoute {
+    const configuredRoute = regionalRouteOverride
+      ? normalizeRiotRegionalRoute(regionalRouteOverride)
+      : null;
+
+    return configuredRoute ?? getRegionalRouteForPlatform(platformRegion);
   }
 
   private async safeRiotRequest<T>(

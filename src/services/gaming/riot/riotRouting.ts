@@ -51,6 +51,15 @@ export function getRegionalRouteForPlatform(region: RiotPlatformRegion): RiotReg
   return platformToRegionalRoute[region];
 }
 
+export function normalizeRiotRegionalRoute(route: string): RiotRegionalRoute | null {
+  const normalizedRoute = route.trim().toLowerCase();
+  const regionalRoutes: RiotRegionalRoute[] = ["americas", "europe", "asia", "sea"];
+
+  return regionalRoutes.includes(normalizedRoute as RiotRegionalRoute)
+    ? normalizedRoute as RiotRegionalRoute
+    : null;
+}
+
 export function riotRegionalApiBaseUrl(route: RiotRegionalRoute): string {
   return `https://${route}.api.riotgames.com`;
 }
