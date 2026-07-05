@@ -1,101 +1,326 @@
-﻿# The RypeNation Discord Bot
+<div align="center">
 
-A TypeScript Discord bot built with discord.js v14. It registers administrator-only slash commands for deploying The RypeNation server packages and wiping server channels when explicitly confirmed.
+# ⚙️ RypeBot
 
-## Requirements
+### The Official Discord Infrastructure Bot for The RypeNation
 
-- Node.js 20 or newer recommended
-- A Discord bot application
-- The existing `.env` file in this folder with:
+*"Building communities through automation."*
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
+
+---
+
+```text
+██████╗ ██╗   ██╗██████╗ ███████╗██████╗  ██████╗ ████████╗
+██╔══██╗╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗██╔═══██╗╚══██╔══╝
+██████╔╝ ╚████╔╝ ██████╔╝█████╗  ██████╔╝██║   ██║   ██║
+██╔══██╗  ╚██╔╝  ██╔═══╝ ██╔══╝  ██╔══██╗██║   ██║   ██║
+██║  ██║   ██║   ██║     ███████╗██████╔╝╚██████╔╝   ██║
+╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚══════╝╚═════╝  ╚═════╝    ╚═╝
+```
+
+---
+
+# 🚀 About
+
+**RypeBot** is the automation engine behind **The RypeNation Discord Community**.
+
+It is built to create, deploy, maintain, and expand large-scale Discord communities using modular deployment packages instead of manually creating hundreds of channels and permissions.
+
+Rather than acting like a traditional moderation bot, RypeBot serves as the operating system for Discord infrastructure.
+
+---
+
+# ✨ Features
+
+## 🏗️ Server Infrastructure
+
+- Automated server deployment
+- Category creation
+- Text channel creation
+- Voice channel creation
+- Permission management
+- Server backups
+- Safe redeployment
+- Modular architecture
+
+---
+
+## 📦 Deployment Packages
+
+Current deployment modules include:
+
+- 🧭 Default Core Server
+- 🔧 Server Commands
+- 🌿 Cannabis
+- 🍄 Psychedelics
+- 🎮 Gaming
+- 🕹️ Individual Game Communities
+- 🎥 Movies & Television
+- 📸 Photography
+- 🎨 Content Creation
+- 💻 Technology
+- 🔊 Voice Communities
+- ⚙️ Utility Modules
+
+> **Note:**  
+> The README intentionally does **not** list every channel.
+>
+> The deployment packages inside this repository are considered the source of truth and are updated much more frequently.
+
+---
+
+# 🛠️ Technology Stack
+
+| Component | Technology |
+|------------|------------|
+| Language | TypeScript |
+| Runtime | Node.js |
+| Framework | Discord.js v14 |
+| Package Manager | npm |
+| Environment | dotenv |
+| IDE | Visual Studio Code |
+| Version Control | Git |
+| Repository | GitHub |
+
+---
+
+# 📁 Project Structure
+
+```text
+RypeBot/
+│
+├── src/
+│   ├── commands/
+│   ├── deployments/
+│   ├── events/
+│   ├── utils/
+│   ├── config/
+│   ├── deploy-commands.ts
+│   └── index.ts
+│
+├── dist/
+├── .env
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# ⚡ Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/AngusAranda/RypeBot.git
+```
+
+Enter the project.
+
+```bash
+cd RypeBot
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Create a `.env`
 
 ```env
-DISCORD_BOT_TOKEN=your_bot_token
-GUILD_ID=1516329583685664899
-CLIENT_ID=1523216011136864276
+DISCORD_TOKEN=YOUR_TOKEN
+CLIENT_ID=YOUR_CLIENT_ID
+GUILD_ID=YOUR_SERVER_ID
 ```
 
-Do not commit or share your `.env` file.
-
-## Bot Permissions
-
-When inviting the bot, make sure it has these permissions:
-
-- Manage Roles
-- Manage Channels
-- View Channels
-- Send Messages
-- Read Message History
-
-The bot role must be higher than any role it needs to create or manage.
-
-## Commands
-
-### Discord slash commands
-
-- `/deploy` creates the Default Core Server package only.
-- `/deployentertainment` adds the Entertainment Expansion package only.
-- `/wipechannels confirm:WIPE CHANNELS` deletes every deletable channel in the server and does not create anything afterward.
-
-`/wipechannels` is destructive. It removes category, text, voice, forum, stage, announcement, and other deletable channel types. It requires Administrator permission and the exact confirmation phrase `WIPE CHANNELS`.
-
-### Register slash commands
+Deploy slash commands.
 
 ```bash
-npm.cmd run deploy-commands
+npm run deploy-commands
 ```
 
-### Run in development
+Run the bot.
 
 ```bash
-npm.cmd run dev
+npm run dev
 ```
 
-### Build
+Production.
 
 ```bash
-npm.cmd run build
+npm run build
+npm start
 ```
 
-### Start compiled bot
+---
+
+# 🔄 Typical Workflow
+
+```text
+          Make Changes
+                │
+                ▼
+        Test In Discord
+                │
+                ▼
+      Backup Deployment
+                │
+                ▼
+      Deploy New Structure
+                │
+                ▼
+         Commit To Git
+                │
+                ▼
+         Push To GitHub
+```
+
+---
+
+# 🧩 Git Commands
+
+Check status
 
 ```bash
-npm.cmd start
+git status
 ```
 
-## Deployment Flow
+Stage everything
 
-1. Install dependencies.
-2. Register slash commands.
-3. Start the bot.
-4. In Discord, run `/deploy` as a server administrator.
+```bash
+git add .
+```
 
-The current `/deploy` command creates the Default Core Server package:
+Commit
 
-- Welcome Center
-- Server Information
-- Community Hub
-- Support Desk
-- Staff Operations
+```bash
+git commit -m "Describe your changes"
+```
 
-The `/deploy` command is safe to run more than once. Existing roles, categories, and matching channels are reused instead of duplicated.
+Push
 
-The `/deployentertainment` command adds these entertainment categories only:
+```bash
+git push
+```
 
-- Cannabis & Psychedelics
-- Gaming Hub
-- Competitive Games
-- Featured Games
+Pull latest
 
-The `/deployentertainment` command is additive and safe to run more than once. It does not delete, modify, or rebuild the Default Core package.
+```bash
+git pull
+```
 
-The `/wipechannels` command is separate from `/deploy`. It only wipes channels and does not rebuild the server afterward.
+---
 
-## Deployment Packages
+# 🎯 Design Goals
 
-The active deployment package is kept in `src/config/serverConfig.ts` and `src/lib/serverBuilder.ts` so `/deploy` stays simple to run.
+RypeBot follows several guiding principles.
 
-Previous deployment packages are backed up in `src/deployments/`. The earlier themed RypeNation layout was saved there before this default core package replaced the active deployment.
+- Infrastructure as Code
+- Automation First
+- Modular Architecture
+- Enterprise Organization
+- Scalable Deployments
+- Human Readable Configuration
+- Easy Maintenance
+- Safe Backups
+- Clean Code
 
-The entertainment package is kept separate in `src/config/entertainmentConfig.ts`, `src/lib/entertainmentBuilder.ts`, and `src/commands/deployEntertainment.ts`.
+---
 
-The channel wipe package is kept separate in `src/lib/channelWiper.ts` and `src/commands/wipeChannels.ts`.
+# 🗺️ Roadmap
+
+## ✅ Phase 1
+
+- Discord Bot Framework
+- Slash Commands
+- Server Deployment Packages
+- Backup System
+- Configuration System
+
+---
+
+## 🚧 Phase 2
+
+- Moderation
+- Welcome System
+- Ticket System
+- Verification
+- Role Management
+- Logging
+- Auto Moderation
+
+---
+
+## 🚀 Phase 3
+
+- Gaming Modules
+- XP System
+- Community Events
+- Polls
+- Music Utilities
+- Leaderboards
+
+---
+
+## 🤖 Phase 4
+
+Artificial Intelligence integration.
+
+Planned features include:
+
+- AI Moderation
+- AI Support Assistant
+- AI Server Builder
+- AI Documentation
+- AI Analytics
+- AI Deployment Generator
+
+---
+
+# 🔒 Security
+
+Never commit:
+
+- `.env`
+- Bot Token
+- API Keys
+- Secrets
+- Production IDs
+
+Always verify `.gitignore` before pushing.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Please open an Issue first before submitting major Pull Requests.
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+## 🏭 The RypeNation
+
+### Building communities through automation.
+
+*"Create once. Deploy forever."*
+
+⭐ If you like this project, consider starring the repository.
+
+</div>
