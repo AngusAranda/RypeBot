@@ -1,0 +1,76 @@
+{
+  "permissionRoles": [
+    {
+      "name": "Founder",
+      "color": "#f97316",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak", "Stream", "ManageChannels", "ManageRoles", "ManageMessages", "ManageThreads", "ManageNicknames", "KickMembers", "BanMembers", "ModerateMembers", "MentionEveryone", "CreateEvents"]
+    },
+    {
+      "name": "Admin",
+      "color": "#ef4444",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak", "Stream", "ManageChannels", "ManageMessages", "ManageThreads", "ManageNicknames", "ModerateMembers", "MentionEveryone", "CreateEvents"]
+    },
+    {
+      "name": "Moderator",
+      "color": "#3b82f6",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak", "Stream", "ManageMessages", "ManageThreads", "ManageNicknames", "ModerateMembers"]
+    },
+    {
+      "name": "RypeTech",
+      "color": "#14b8a6",
+      "mentionable": true,
+      "permissions": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak", "Stream", "ManageMessages", "ManageThreads"]
+    },
+    {
+      "name": "Verified",
+      "color": "#22c55e",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak", "Stream"]
+    },
+    {
+      "name": "Member",
+      "color": "#94a3b8",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"]
+    },
+    {
+      "name": "New Member",
+      "color": "#64748b",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "ReadMessageHistory", "UseApplicationCommands"]
+    },
+    {
+      "name": "Muted",
+      "color": "#1f2937",
+      "mentionable": false,
+      "permissions": ["ViewChannel", "ReadMessageHistory"]
+    }
+  ],
+  "interestRoles": [
+    { "name": "Gamer", "color": "#8b5cf6", "mentionable": true },
+    { "name": "Streamer", "color": "#ec4899", "mentionable": true },
+    { "name": "Smoke Sesh", "color": "#22c55e", "mentionable": true },
+    { "name": "Cannabis", "color": "#16a34a", "mentionable": true },
+    { "name": "Psychedelics", "color": "#a855f7", "mentionable": true },
+    { "name": "League Of Legends", "color": "#2563eb", "mentionable": true },
+    { "name": "Minecraft", "color": "#65a30d", "mentionable": true },
+    { "name": "Fortnite", "color": "#0ea5e9", "mentionable": true },
+    { "name": "Call Of Duty", "color": "#dc2626", "mentionable": true },
+    { "name": "Valorant", "color": "#fb7185", "mentionable": true },
+    { "name": "Content Creator", "color": "#f59e0b", "mentionable": true },
+    { "name": "Artist", "color": "#ec4899", "mentionable": true },
+    { "name": "Tech Support", "color": "#06b6d4", "mentionable": true }
+  ],
+  "notificationRoles": [
+    "Announcements",
+    "Events",
+    "Giveaways",
+    "Tournaments",
+    "Game Night",
+    "Livestreams",
+    "YouTube Uploads"
+  ]
+}

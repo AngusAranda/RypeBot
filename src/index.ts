@@ -1,7 +1,9 @@
 import "dotenv/config";
 import { Client, Events, GatewayIntentBits, Interaction } from "discord.js";
+import { auditServerCommand } from "./commands/auditServer.js";
 import { deployCommand } from "./commands/deploy.js";
 import { deployEntertainmentCommand } from "./commands/deployEntertainment.js";
+import { deployPermissionsCommand } from "./commands/deployPermissions.js";
 import { wipeChannelsCommand } from "./commands/wipeChannels.js";
 
 const token = process.env.DISCORD_BOT_TOKEN;
@@ -25,8 +27,10 @@ client.on(Events.InteractionCreate, async (interaction: Interaction) => {
   }
 
   const commands = new Map([
+    [auditServerCommand.data.name, auditServerCommand.execute],
     [deployCommand.data.name, deployCommand.execute],
     [deployEntertainmentCommand.data.name, deployEntertainmentCommand.execute],
+    [deployPermissionsCommand.data.name, deployPermissionsCommand.execute],
     [wipeChannelsCommand.data.name, wipeChannelsCommand.execute]
   ]);
   const execute = commands.get(interaction.commandName);

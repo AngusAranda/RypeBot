@@ -1,7 +1,9 @@
 import "dotenv/config";
 import { REST, Routes } from "discord.js";
+import { auditServerCommand } from "./commands/auditServer.js";
 import { deployCommand } from "./commands/deploy.js";
 import { deployEntertainmentCommand } from "./commands/deployEntertainment.js";
+import { deployPermissionsCommand } from "./commands/deployPermissions.js";
 import { wipeChannelsCommand } from "./commands/wipeChannels.js";
 
 type DiscordApplication = {
@@ -25,8 +27,10 @@ const clientId = requiredEnv("CLIENT_ID");
 const guildId = requiredEnv("GUILD_ID");
 
 const commands = [
+  auditServerCommand.data.toJSON(),
   deployCommand.data.toJSON(),
   deployEntertainmentCommand.data.toJSON(),
+  deployPermissionsCommand.data.toJSON(),
   wipeChannelsCommand.data.toJSON()
 ];
 const rest = new REST({ version: "10" }).setToken(token);

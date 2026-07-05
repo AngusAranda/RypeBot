@@ -1,0 +1,25 @@
+{
+  "readOnlyChannels": ["rules", "announcements", "server-guide", "directory", "faq", "change-log"],
+  "welcomeReadChannels": ["welcome", "rules", "announcements", "start-here", "roles", "verification", "server-guide", "directory", "faq", "help-desk", "change-log"],
+  "welcomeStaffPostChannels": ["welcome", "rules", "start-here", "roles"],
+  "founderAdminPostChannels": ["announcements"],
+  "infoStaffPostChannels": ["server-guide", "directory", "faq", "change-log"],
+  "publicSendChannels": ["verification", "help-desk", "open-a-ticket", "tech-support", "contact-staff", "report-a-problem"],
+  "communityTextChannels": ["general-chat", "introductions", "media-share", "memes", "random-thoughts"],
+  "communityNewMemberSendChannels": ["introductions"],
+  "staffCategoryNames": ["Staff Operations"],
+  "staffCommandChannels": ["server-commands"],
+  "cannabisTextChannels": ["general-cannabis", "smoke-sessions", "growing", "gear--accessories", "strains"],
+  "cannabisMediaChannels": ["smoke--setup-pictures"],
+  "psychedelicTextChannels": ["mushrooms", "dmt", "lsd", "mescaline", "mdma", "ibogaine", "psychedelic-discussion", "research--studies", "trip-art"],
+  "gamingTextChannels": ["general-gaming", "gaming-news", "pc-gaming", "console-gaming", "mobile-gaming", "achievements", "game-clips", "gaming-memes", "looking-for-group", "indie-games"],
+  "competitiveTextChannels": ["shooters", "moba", "mmorpg", "racing", "sports-games", "puzzle-games", "strategy-games", "card-games", "horror-games", "retro-games", "vr-gaming"],
+  "featuredGameChannels": {
+    "league-of-legends": ["League Of Legends"],
+    "minecraft": ["Minecraft"],
+    "fortnite": ["Fortnite"],
+    "call-of-duty": ["Call Of Duty"],
+    "warzone": ["Call Of Duty"],
+    "valorant": ["Valorant"]
+  }
+}
