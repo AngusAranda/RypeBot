@@ -1,0 +1,119 @@
+{
+  "allowEveryoneEdit": false,
+  "roles": {
+    "New Member": {
+      "allowAdministrator": false,
+      "permissions": [
+        "ViewChannel",
+        "ReadMessageHistory",
+        "UseApplicationCommands"
+      ]
+    },
+    "Verified": {
+      "allowAdministrator": false,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "AddReactions",
+        "AttachFiles",
+        "EmbedLinks",
+        "UseExternalEmojis",
+        "UseExternalStickers",
+        "CreatePublicThreads",
+        "SendMessagesInThreads",
+        "UseApplicationCommands",
+        "Connect",
+        "Speak",
+        "UseVAD"
+      ]
+    },
+    "Member": {
+      "allowAdministrator": false,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "AddReactions",
+        "AttachFiles",
+        "EmbedLinks",
+        "UseExternalEmojis",
+        "UseExternalStickers",
+        "CreatePublicThreads",
+        "CreatePrivateThreads",
+        "SendMessagesInThreads",
+        "UseApplicationCommands",
+        "Connect",
+        "Speak",
+        "Stream",
+        "UseVAD"
+      ]
+    },
+    "Muted": {
+      "allowAdministrator": false,
+      "permissions": [
+        "ViewChannel",
+        "ReadMessageHistory"
+      ]
+    },
+    "Moderator": {
+      "allowAdministrator": false,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "ManageMessages",
+        "ManageThreads",
+        "AddReactions",
+        "AttachFiles",
+        "EmbedLinks",
+        "UseExternalEmojis",
+        "UseExternalStickers",
+        "UseApplicationCommands",
+        "Connect",
+        "Speak",
+        "Stream",
+        "UseVAD",
+        "MuteMembers",
+        "DeafenMembers",
+        "MoveMembers",
+        "ModerateMembers",
+        "ViewAuditLog"
+      ]
+    },
+    "Admin": {
+      "allowAdministrator": true,
+      "permissions": [
+        "Administrator"
+      ]
+    },
+    "Founder": {
+      "allowAdministrator": true,
+      "permissions": [
+        "Administrator"
+      ]
+    },
+    "RypeTech": {
+      "allowAdministrator": false,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "ManageChannels",
+        "ManageRoles",
+        "ManageMessages",
+        "ManageThreads",
+        "ViewAuditLog",
+        "ManageWebhooks",
+        "UseApplicationCommands",
+        "Connect",
+        "Speak",
+        "Stream",
+        "UseVAD",
+        "MoveMembers",
+        "MuteMembers",
+        "DeafenMembers"
+      ]
+    }
+  }
+}

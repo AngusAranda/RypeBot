@@ -1,0 +1,44 @@
+{
+  "dryRun": false,
+  "results": [
+    {
+      "step": "backup current live Discord state",
+      "status": "ok",
+      "details": [
+        "C:\\Users\\Administrator\\Documents\\JOB Bot\\backups\\permissions-backup-2026-07-05T102031-758Z.json",
+        "C:\\Users\\Administrator\\Documents\\JOB Bot\\backups\\role-permissions-backup-2026-07-05T102031-976Z.json"
+      ]
+    },
+    {
+      "step": "deploy roles, categories, and channels",
+      "status": "ok",
+      "details": [
+        "Core server structure deployed."
+      ]
+    },
+    {
+      "step": "deploy role permissions",
+      "status": "ok",
+      "details": [
+        "Changed roles: 0",
+        "Unchanged roles: 8"
+      ]
+    },
+    {
+      "step": "deploy channel and category permissions",
+      "status": "ok",
+      "details": [
+        "Category policies: 9",
+        "Synced channels: 86",
+        "Channel exceptions: 4"
+      ]
+    },
+    {
+      "step": "run audit",
+      "status": "ok",
+      "details": [
+        "Post-deploy permission audit passed."
+      ]
+    }
+  ]
+}

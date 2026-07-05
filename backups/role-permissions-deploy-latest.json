@@ -1,0 +1,200 @@
+{
+  "mode": "deploy",
+  "timestamp": "2026-07-05T10:03:36.687Z",
+  "serverName": "The RypeNation",
+  "serverId": "1516329583685664899",
+  "changedRoles": [
+    {
+      "roleName": "Verified",
+      "roleId": "1523251667758354574",
+      "currentBitfield": "2150747712",
+      "desiredBitfield": "448861162560",
+      "added": [
+        "CreatePublicThreads",
+        "SendMessagesInThreads",
+        "UseExternalEmojis",
+        "UseExternalStickers",
+        "UseVAD"
+      ],
+      "removed": [
+        "Stream"
+      ]
+    },
+    {
+      "roleName": "Member",
+      "roleId": "1523231000207822871",
+      "currentBitfield": "2150747200",
+      "desiredBitfield": "517580639808",
+      "added": [
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "SendMessagesInThreads",
+        "Stream",
+        "UseExternalEmojis",
+        "UseExternalStickers",
+        "UseVAD"
+      ],
+      "removed": []
+    },
+    {
+      "roleName": "Moderator",
+      "roleId": "1523230995703267408",
+      "currentBitfield": "2248473465835073",
+      "desiredBitfield": "1256344383168",
+      "added": [
+        "DeafenMembers",
+        "ManageMessages",
+        "ManageThreads",
+        "ModerateMembers",
+        "MoveMembers",
+        "MuteMembers",
+        "ViewAuditLog"
+      ],
+      "removed": [
+        "ChangeNickname",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "MentionEveryone",
+        "RequestToSpeak",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalSounds",
+        "UseSoundboard"
+      ]
+    },
+    {
+      "roleName": "Admin",
+      "roleId": "1523230993681744005",
+      "currentBitfield": "2248473465835073",
+      "desiredBitfield": "8",
+      "added": [
+        "Administrator"
+      ],
+      "removed": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    },
+    {
+      "roleName": "Founder",
+      "roleId": "1523230992654012428",
+      "currentBitfield": "2248473465835073",
+      "desiredBitfield": "8",
+      "added": [
+        "Administrator"
+      ],
+      "removed": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    },
+    {
+      "roleName": "RypeTech",
+      "roleId": "1523230996701380841",
+      "currentBitfield": "2248473465835073",
+      "desiredBitfield": "20198796944",
+      "added": [
+        "DeafenMembers",
+        "ManageChannels",
+        "ManageMessages",
+        "ManageRoles",
+        "ManageThreads",
+        "ManageWebhooks",
+        "MoveMembers",
+        "MuteMembers",
+        "ViewAuditLog"
+      ],
+      "removed": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "RequestToSpeak",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard"
+      ]
+    }
+  ],
+  "unchangedRoles": [
+    "Muted",
+    "New Member"
+  ],
+  "missingRoles": [],
+  "skippedRoles": [],
+  "errors": []
+}

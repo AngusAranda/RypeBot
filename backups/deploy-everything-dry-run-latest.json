@@ -1,0 +1,43 @@
+{
+  "dryRun": true,
+  "results": [
+    {
+      "step": "backup current live Discord state",
+      "status": "ok",
+      "details": [
+        "Dry-run: skipped writing new backup files."
+      ]
+    },
+    {
+      "step": "deploy roles, categories, and channels",
+      "status": "ok",
+      "details": [
+        "Dry-run: run npm run repair -- --dry-run for the detailed structure preview."
+      ]
+    },
+    {
+      "step": "deploy role permissions",
+      "status": "ok",
+      "details": [
+        "Changed roles: 0",
+        "Unchanged roles: 8"
+      ]
+    },
+    {
+      "step": "deploy channel and category permissions",
+      "status": "ok",
+      "details": [
+        "Category policies: 9",
+        "Synced channels: 86",
+        "Channel exceptions: 4"
+      ]
+    },
+    {
+      "step": "run audit",
+      "status": "ok",
+      "details": [
+        "Post-deploy permission audit passed."
+      ]
+    }
+  ]
+}

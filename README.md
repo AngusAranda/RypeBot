@@ -162,6 +162,55 @@ npm start
 
 ---
 
+# Infrastructure v1.0
+
+RypeBot can answer the operational question: "Does Discord currently match GitHub/project config?"
+
+Use these commands from PowerShell at the project root.
+
+```powershell
+npm run audit
+npm run repair -- --dry-run
+npm run repair
+npm run rollback -- --dry-run
+npm run rollback
+npm run deploy:everything -- --dry-run
+npm run deploy:everything
+```
+
+## Command Guide
+
+`npm run audit`
+
+Read-only. Compares the expected project configuration against the live Discord server. Reports matching items, missing roles/categories/channels, extra live objects, permission drift, warnings, and the recommended next command.
+
+`npm run repair -- --dry-run`
+
+Safe preview. Shows missing structure and permission changes that would be applied. Does not modify Discord.
+
+`npm run repair`
+
+Creates missing configured roles/categories/channels and applies role plus channel/category permission drift fixes. It writes a backup first and does not delete extra live Discord objects.
+
+`npm run rollback -- --dry-run`
+
+Safe preview. Finds the most recent `backups/permissions-backup-*.json` file and shows the role/channel permission state it would restore.
+
+`npm run rollback`
+
+Restores permissions from the most recent permission backup. It fails safely if no backup exists and does not guess missing live Discord objects.
+
+`npm run deploy:everything -- --dry-run`
+
+Runs the full pipeline in preview mode. It stops on the first failed safety check.
+
+`npm run deploy:everything`
+
+Runs the safe deployment pipeline in order: backup current live Discord state, deploy roles/categories/channels, deploy role permissions, deploy channel/category permissions, then prompts you to run `npm run audit`.
+
+Extra live Discord objects are reported but not deleted. Deletion is intentionally not part of Infrastructure v1.0 unless a future command implements an explicit, reviewed `--delete-extra` workflow.
+
+---
 # 🔄 Typical Workflow
 
 ```text

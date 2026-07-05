@@ -1,0 +1,101 @@
+{
+  "profiles": {
+    "publicReadOnly": [
+      { "roleName": "@everyone", "allow": ["ViewChannel", "ReadMessageHistory"], "deny": ["SendMessages"] },
+      { "roleName": "Founder", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands"] },
+      { "roleName": "Admin", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands"] },
+      { "roleName": "Moderator", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands"] },
+      { "roleName": "Muted", "deny": ["SendMessages", "AddReactions"] }
+    ],
+    "publicHelp": [
+      { "roleName": "@everyone", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands"], "deny": [] },
+      { "roleName": "Muted", "deny": ["SendMessages", "AddReactions"] }
+    ],
+    "community": [
+      { "roleName": "@everyone", "allow": ["ViewChannel", "ReadMessageHistory"], "deny": ["SendMessages"] },
+      { "roleName": "New Member", "allow": ["ViewChannel", "ReadMessageHistory"], "deny": ["SendMessages"] },
+      { "roleName": "Verified", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Member", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Muted", "deny": ["SendMessages", "Speak", "AddReactions"] }
+    ],
+    "staffOnly": [
+      { "roleName": "@everyone", "deny": ["ViewChannel"] },
+      { "roleName": "Founder", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "UseApplicationCommands", "Connect", "Speak", "ManageMessages", "ManageThreads"] },
+      { "roleName": "Admin", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "UseApplicationCommands", "Connect", "Speak", "ManageMessages", "ManageThreads"] },
+      { "roleName": "Moderator", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "UseApplicationCommands", "Connect", "Speak", "ManageMessages", "ManageThreads"] },
+      { "roleName": "RypeTech", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "UseApplicationCommands", "Connect", "Speak", "ManageMessages", "ManageThreads"] },
+      { "roleName": "JOB Bot", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands", "ManageChannels", "ManageRoles"] }
+    ],
+    "cannabis": [
+      { "roleName": "@everyone", "allow": ["ViewChannel", "ReadMessageHistory"], "deny": ["SendMessages", "Connect"] },
+      { "roleName": "Smoke Sesh", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Cannabis", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Psychedelics", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Founder", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Admin", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Moderator", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Muted", "deny": ["SendMessages", "Speak", "AddReactions"] }
+    ],
+    "psychedelics": [
+      { "roleName": "@everyone", "allow": ["ViewChannel", "ReadMessageHistory"], "deny": ["SendMessages", "Connect"] },
+      { "roleName": "Psychedelics", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Founder", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Admin", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Moderator", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Muted", "deny": ["SendMessages", "Speak", "AddReactions"] }
+    ],
+    "gaming": [
+      { "roleName": "@everyone", "allow": ["ViewChannel", "ReadMessageHistory"], "deny": ["SendMessages"] },
+      { "roleName": "Gamer", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak", "Stream"] },
+      { "roleName": "Verified", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Member", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Founder", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Admin", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Moderator", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "EmbedLinks", "AttachFiles", "AddReactions", "UseApplicationCommands", "Connect", "Speak"] },
+      { "roleName": "Muted", "deny": ["SendMessages", "Speak", "AddReactions"] }
+    ]
+  },
+  "categories": [
+    { "name": "Welcome", "profile": "publicReadOnly", "syncChildren": true },
+    { "name": "Information", "profile": "publicReadOnly", "syncChildren": true },
+    { "name": "Support", "profile": "publicHelp", "syncChildren": true },
+    { "name": "Community", "profile": "community", "syncChildren": true },
+    { "name": "Staff Operations", "profile": "staffOnly", "syncChildren": true },
+    { "name": "Cannabis & Psychedelics", "profile": "cannabis", "syncChildren": true },
+    { "name": "Gaming", "profile": "gaming", "syncChildren": true },
+    { "name": "Competitive Games", "profile": "gaming", "syncChildren": true },
+    { "name": "Featured Games", "profile": "gaming", "syncChildren": true }
+  ],
+  "channelExceptions": [
+    {
+      "name": "verification",
+      "profile": "publicHelp",
+      "reason": "Allows new users to interact before full community access."
+    },
+    {
+      "name": "help-desk",
+      "profile": "publicHelp",
+      "reason": "Keeps support reachable."
+    },
+    {
+      "name": "introductions",
+      "overwrites": [
+        { "roleName": "New Member", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands"] },
+        { "roleName": "Muted", "deny": ["SendMessages", "AddReactions"] }
+      ],
+      "reason": "New members may introduce themselves while other community channels stay read-only."
+    },
+    {
+      "name": "server-commands",
+      "overwrites": [
+        { "roleName": "@everyone", "deny": ["ViewChannel"] },
+        { "roleName": "Founder", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands"] },
+        { "roleName": "Admin", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands"] },
+        { "roleName": "RypeTech", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands"] },
+        { "roleName": "Moderator", "deny": ["ViewChannel"] },
+        { "roleName": "JOB Bot", "allow": ["ViewChannel", "SendMessages", "ReadMessageHistory", "UseApplicationCommands", "ManageChannels", "ManageRoles"] }
+      ],
+      "reason": "Bot deployment commands are restricted to high-trust operators."
+    }
+  ]
+}

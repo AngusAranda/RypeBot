@@ -1,0 +1,4217 @@
+{
+  "generatedAt": "2026-07-05T09:46:57.177Z",
+  "server": {
+    "id": "1516329583685664899",
+    "name": "The RypeNation"
+  },
+  "roles": [
+    {
+      "id": "1523224470423212105",
+      "name": "JOB Bot",
+      "position": 29,
+      "color": "#000000",
+      "managed": true,
+      "mentionable": false,
+      "permissions": [
+        "ManageChannels",
+        "ManageRoles",
+        "ReadMessageHistory",
+        "SendMessages",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230992654012428",
+      "name": "Founder",
+      "position": 28,
+      "color": "#f97316",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230993681744005",
+      "name": "Admin",
+      "position": 27,
+      "color": "#ef4444",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230995703267408",
+      "name": "Moderator",
+      "position": 26,
+      "color": "#3b82f6",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230996701380841",
+      "name": "RypeTech",
+      "position": 25,
+      "color": "#14b8a6",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230997498429522",
+      "name": "Gamer",
+      "position": 24,
+      "color": "#8b5cf6",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230998685286410",
+      "name": "Streamer",
+      "position": 23,
+      "color": "#ec4899",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523230999285338185",
+      "name": "Smoke Sesh",
+      "position": 22,
+      "color": "#22c55e",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523231000207822871",
+      "name": "Member",
+      "position": 21,
+      "color": "#94a3b8",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251667758354574",
+      "name": "Verified",
+      "position": 20,
+      "color": "#22c55e",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251669536739448",
+      "name": "New Member",
+      "position": 19,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "ReadMessageHistory",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251670547562618",
+      "name": "Muted",
+      "position": 18,
+      "color": "#1f2937",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "ReadMessageHistory",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251675492515981",
+      "name": "Cannabis",
+      "position": 17,
+      "color": "#16a34a",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251677115973632",
+      "name": "Psychedelics",
+      "position": 16,
+      "color": "#a855f7",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251677828743209",
+      "name": "League Of Legends",
+      "position": 15,
+      "color": "#2563eb",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251678986502185",
+      "name": "Minecraft",
+      "position": 14,
+      "color": "#65a30d",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251680664092702",
+      "name": "Fortnite",
+      "position": 13,
+      "color": "#0ea5e9",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251681989492866",
+      "name": "Call Of Duty",
+      "position": 12,
+      "color": "#dc2626",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251683189067868",
+      "name": "Valorant",
+      "position": 11,
+      "color": "#fb7185",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251684627972367",
+      "name": "Content Creator",
+      "position": 10,
+      "color": "#f59e0b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251685554655354",
+      "name": "Artist",
+      "position": 9,
+      "color": "#ec4899",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251686649626626",
+      "name": "Tech Support",
+      "position": 8,
+      "color": "#06b6d4",
+      "managed": false,
+      "mentionable": true,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "Connect",
+        "EmbedLinks",
+        "ReadMessageHistory",
+        "SendMessages",
+        "Speak",
+        "UseApplicationCommands",
+        "ViewChannel"
+      ]
+    },
+    {
+      "id": "1523251687760859276",
+      "name": "Announcements",
+      "position": 7,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1523251688612560917",
+      "name": "Events",
+      "position": 6,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1523251689778581544",
+      "name": "Giveaways",
+      "position": 5,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1523251690306928694",
+      "name": "Tournaments",
+      "position": 4,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1523251691250515980",
+      "name": "Game Night",
+      "position": 3,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1523251692878037012",
+      "name": "Livestreams",
+      "position": 2,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1523251694757220352",
+      "name": "YouTube Uploads",
+      "position": 1,
+      "color": "#64748b",
+      "managed": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
+      "id": "1516329583685664899",
+      "name": "@everyone",
+      "position": 0,
+      "color": "#000000",
+      "managed": false,
+      "mentionable": false,
+      "permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreateEvents",
+        "CreateGuildExpressions",
+        "CreateInstantInvite",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "RequestToSpeak",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendVoiceMessages",
+        "SetVoiceChannelStatus",
+        "Speak",
+        "Stream",
+        "UseApplicationCommands",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "UseSoundboard",
+        "UseVAD",
+        "ViewChannel"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "1523235529854947338",
+      "name": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "type": "GuildCategory",
+      "position": 0,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523235530777825360",
+          "name": "👋│welcome",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523235529854947338",
+          "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235532077793320",
+          "name": "📜│rules",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523235529854947338",
+          "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235533944389834",
+          "name": "📢│announcements",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523235529854947338",
+          "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235535865385071",
+          "name": "🧭│start-here",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523235529854947338",
+          "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235537115414579",
+          "name": "🎭│roles",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523235529854947338",
+          "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235538608328784",
+          "name": "✅│verification",
+          "type": "GuildText",
+          "position": 5,
+          "parentId": "1523235529854947338",
+          "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523235539443122206",
+      "name": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "type": "GuildCategory",
+      "position": 1,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523235540281856100",
+          "name": "📌│server-guide",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523235539443122206",
+          "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235540814659687",
+          "name": "🗺️│directory",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523235539443122206",
+          "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235541959704650",
+          "name": "❓│faq",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523235539443122206",
+          "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235543637561354",
+          "name": "🆘│help-desk",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523235539443122206",
+          "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235544736206909",
+          "name": "📝│change-log",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523235539443122206",
+          "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523235546099351703",
+      "name": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "type": "GuildCategory",
+      "position": 2,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523235547362099252",
+          "name": "💬│general-chat",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235552252399709",
+          "name": "🔊│General Voice",
+          "type": "GuildVoice",
+          "position": 0,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235553737183282",
+          "name": "☕│Chill Lounge",
+          "type": "GuildVoice",
+          "position": 1,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235548519596052",
+          "name": "👋│introductions",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235549404467330",
+          "name": "📸│media-share",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235549878685829",
+          "name": "😂│memes",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235551333847061",
+          "name": "🧠│random-thoughts",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523235546099351703",
+          "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523235554588758076",
+      "name": "◤ ═══ SUPPORT DESK ═══ ◥",
+      "type": "GuildCategory",
+      "position": 3,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523235555767226488",
+          "name": "🎫│open-a-ticket",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523235554588758076",
+          "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235556794957954",
+          "name": "🛠️│tech-support",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523235554588758076",
+          "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235557822693446",
+          "name": "📩│contact-staff",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523235554588758076",
+          "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523235558455775264",
+          "name": "⚠️│report-a-problem",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523235554588758076",
+          "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523235559806599168",
+      "name": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "type": "GuildCategory",
+      "position": 4,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523235562792943616",
+          "name": "👑│admin-chat",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235568698523749",
+          "name": "🔒│Staff Voice",
+          "type": "GuildVoice",
+          "position": 0,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235564336451714",
+          "name": "🛡️│moderator-chat",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235565347012823",
+          "name": "📋│staff-notes",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235566521421844",
+          "name": "🚨│reports",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523235567528181971",
+          "name": "🧾│audit-log",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "ReadMessageHistory",
+                "SendMessages",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523231056189198346",
+          "name": "🔧│server-commands",
+          "type": "GuildText",
+          "position": 5,
+          "parentId": "1523235559806599168",
+          "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523240347856011406",
+      "name": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "type": "GuildCategory",
+      "position": 5,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523240348887814144",
+          "name": "🌿│general-cannabis",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240366231523328",
+          "name": "🌿│Smoke Lounge",
+          "type": "GuildVoice",
+          "position": 0,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "Connect"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1523240349580136520",
+          "name": "🔥│smoke-sessions",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240367523233905",
+          "name": "🧠│Deep Conversations",
+          "type": "GuildVoice",
+          "position": 1,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1516329583685664899",
+              "type": "role",
+              "name": "@everyone",
+              "allow": [],
+              "deny": [
+                "Connect"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1523240350922051645",
+          "name": "🌱│growing",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240351953846333",
+          "name": "🛒│gear--accessories",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240353195626616",
+          "name": "🍃│strains",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240354352988220",
+          "name": "🍄│mushrooms",
+          "type": "GuildText",
+          "position": 5,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240355053572199",
+          "name": "💎│dmt",
+          "type": "GuildText",
+          "position": 6,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240356152475788",
+          "name": "🧬│lsd",
+          "type": "GuildText",
+          "position": 7,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240357196988426",
+          "name": "🌵│mescaline",
+          "type": "GuildText",
+          "position": 8,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240358090117241",
+          "name": "💊│mdma",
+          "type": "GuildText",
+          "position": 9,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240359428096000",
+          "name": "🌳│ibogaine",
+          "type": "GuildText",
+          "position": 10,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240360619413545",
+          "name": "🧠│psychedelic-discussion",
+          "type": "GuildText",
+          "position": 11,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240361865121872",
+          "name": "📚│research--studies",
+          "type": "GuildText",
+          "position": 12,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240363379134484",
+          "name": "🎨│trip-art",
+          "type": "GuildText",
+          "position": 13,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240365237473320",
+          "name": "📸│smoke--setup-pictures",
+          "type": "GuildText",
+          "position": 14,
+          "parentId": "1523240347856011406",
+          "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523240369041571930",
+      "name": "◤ ═══ GAMING HUB ═══ ◥",
+      "type": "GuildCategory",
+      "position": 6,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523240392189935666",
+          "name": "🎧│Gaming VC 1",
+          "type": "GuildVoice",
+          "position": 0,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240370207719506",
+          "name": "🎮│general-gaming",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240393150562446",
+          "name": "🎧│Gaming VC 2",
+          "type": "GuildVoice",
+          "position": 1,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240375592947722",
+          "name": "📰│gaming-news",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240394081566791",
+          "name": "🎧│Squad Room 1",
+          "type": "GuildVoice",
+          "position": 2,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240384040276008",
+          "name": "💻│pc-gaming",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240395058970704",
+          "name": "🎧│Squad Room 2",
+          "type": "GuildVoice",
+          "position": 3,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240384983994409",
+          "name": "🎮│console-gaming",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240385910935612",
+          "name": "📱│mobile-gaming",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240386707980360",
+          "name": "🏆│achievements",
+          "type": "GuildText",
+          "position": 5,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240387815280720",
+          "name": "🎥│game-clips",
+          "type": "GuildText",
+          "position": 6,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240388888887357",
+          "name": "😂│gaming-memes",
+          "type": "GuildText",
+          "position": 7,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240389622890598",
+          "name": "🔍│looking-for-group",
+          "type": "GuildText",
+          "position": 8,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240391258935396",
+          "name": "🎲│indie-games",
+          "type": "GuildText",
+          "position": 9,
+          "parentId": "1523240369041571930",
+          "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523240395713024094",
+      "name": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "type": "GuildCategory",
+      "position": 7,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523240396803801119",
+          "name": "🔫│shooters",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240398032470148",
+          "name": "⚔️│moba",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240398758350910",
+          "name": "🛡️│mmorpg",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240400037351525",
+          "name": "🚗│racing",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240400427548775",
+          "name": "⚽│sports-games",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240401618604045",
+          "name": "🧩│puzzle-games",
+          "type": "GuildText",
+          "position": 5,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240403032215632",
+          "name": "🏰│strategy-games",
+          "type": "GuildText",
+          "position": 6,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240403912884305",
+          "name": "🃏│card-games",
+          "type": "GuildText",
+          "position": 7,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240404844023891",
+          "name": "👻│horror-games",
+          "type": "GuildText",
+          "position": 8,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240405733347469",
+          "name": "🕹️│retro-games",
+          "type": "GuildText",
+          "position": 9,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240407369257061",
+          "name": "🥽│vr-gaming",
+          "type": "GuildText",
+          "position": 10,
+          "parentId": "1523240395713024094",
+          "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    },
+    {
+      "id": "1523240408199598161",
+      "name": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "type": "GuildCategory",
+      "position": 8,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": [],
+      "children": [
+        {
+          "id": "1523240428038656140",
+          "name": "🎧│League Squad",
+          "type": "GuildVoice",
+          "position": 0,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240409281855558",
+          "name": "🛡️│league-of-legends",
+          "type": "GuildText",
+          "position": 0,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240429246615653",
+          "name": "🎧│FPS Squad",
+          "type": "GuildVoice",
+          "position": 1,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240410279841933",
+          "name": "🏰│minecraft",
+          "type": "GuildText",
+          "position": 1,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240430337003670",
+          "name": "🎧│Sandbox Squad",
+          "type": "GuildVoice",
+          "position": 2,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": [
+            {
+              "id": "1523230993681744005",
+              "type": "role",
+              "name": "Admin",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230992654012428",
+              "type": "role",
+              "name": "Founder",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230997498429522",
+              "type": "role",
+              "name": "Gamer",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523231000207822871",
+              "type": "role",
+              "name": "Member",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523230995703267408",
+              "type": "role",
+              "name": "Moderator",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            },
+            {
+              "id": "1523251670547562618",
+              "type": "role",
+              "name": "Muted",
+              "allow": [],
+              "deny": [
+                "Speak"
+              ]
+            },
+            {
+              "id": "1523251667758354574",
+              "type": "role",
+              "name": "Verified",
+              "allow": [
+                "Connect",
+                "Speak",
+                "ViewChannel"
+              ],
+              "deny": []
+            }
+          ]
+        },
+        {
+          "id": "1523240411181617243",
+          "name": "🚌│fortnite",
+          "type": "GuildText",
+          "position": 2,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240412309880954",
+          "name": "🎯│call-of-duty",
+          "type": "GuildText",
+          "position": 3,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240413564108861",
+          "name": "💥│warzone",
+          "type": "GuildText",
+          "position": 4,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240414923198524",
+          "name": "🪂│pubg",
+          "type": "GuildText",
+          "position": 5,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240415996940289",
+          "name": "🚘│rocket-league",
+          "type": "GuildText",
+          "position": 6,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240418194624543",
+          "name": "🌈│valorant",
+          "type": "GuildText",
+          "position": 7,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240419326951564",
+          "name": "🚓│gta-online",
+          "type": "GuildText",
+          "position": 8,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240420283388037",
+          "name": "🔨│rust",
+          "type": "GuildText",
+          "position": 9,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240421621498017",
+          "name": "🦖│ark",
+          "type": "GuildText",
+          "position": 10,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240422703497357",
+          "name": "🚀│helldivers-2",
+          "type": "GuildText",
+          "position": 11,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240423613665320",
+          "name": "🏴│sea-of-thieves",
+          "type": "GuildText",
+          "position": 12,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240424695660574",
+          "name": "🧟│dayz",
+          "type": "GuildText",
+          "position": 13,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240425798762596",
+          "name": "🚂│factorio",
+          "type": "GuildText",
+          "position": 14,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        },
+        {
+          "id": "1523240426847342622",
+          "name": "🌌│no-mans-sky",
+          "type": "GuildText",
+          "position": 15,
+          "parentId": "1523240408199598161",
+          "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+          "permissionOverwrites": []
+        }
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "id": "1523235529854947338",
+      "name": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "type": "GuildCategory",
+      "position": 0,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240348887814144",
+      "name": "🌿│general-cannabis",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240366231523328",
+      "name": "🌿│Smoke Lounge",
+      "type": "GuildVoice",
+      "position": 0,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "Connect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1523240392189935666",
+      "name": "🎧│Gaming VC 1",
+      "type": "GuildVoice",
+      "position": 0,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240428038656140",
+      "name": "🎧│League Squad",
+      "type": "GuildVoice",
+      "position": 0,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523235555767226488",
+      "name": "🎫│open-a-ticket",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523235554588758076",
+      "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240370207719506",
+      "name": "🎮│general-gaming",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235530777825360",
+      "name": "👋│welcome",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523235529854947338",
+      "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235562792943616",
+      "name": "👑│admin-chat",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523235547362099252",
+      "name": "💬│general-chat",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235540281856100",
+      "name": "📌│server-guide",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523235539443122206",
+      "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235552252399709",
+      "name": "🔊│General Voice",
+      "type": "GuildVoice",
+      "position": 0,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523235568698523749",
+      "name": "🔒│Staff Voice",
+      "type": "GuildVoice",
+      "position": 0,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240396803801119",
+      "name": "🔫│shooters",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240409281855558",
+      "name": "🛡️│league-of-legends",
+      "type": "GuildText",
+      "position": 0,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235539443122206",
+      "name": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "type": "GuildCategory",
+      "position": 1,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235553737183282",
+      "name": "☕│Chill Lounge",
+      "type": "GuildVoice",
+      "position": 1,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240398032470148",
+      "name": "⚔️│moba",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240429246615653",
+      "name": "🎧│FPS Squad",
+      "type": "GuildVoice",
+      "position": 1,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240393150562446",
+      "name": "🎧│Gaming VC 2",
+      "type": "GuildVoice",
+      "position": 1,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240410279841933",
+      "name": "🏰│minecraft",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235548519596052",
+      "name": "👋│introductions",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235532077793320",
+      "name": "📜│rules",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523235529854947338",
+      "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240375592947722",
+      "name": "📰│gaming-news",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240349580136520",
+      "name": "🔥│smoke-sessions",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235540814659687",
+      "name": "🗺️│directory",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523235539443122206",
+      "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240367523233905",
+      "name": "🧠│Deep Conversations",
+      "type": "GuildVoice",
+      "position": 1,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "Connect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1523235556794957954",
+      "name": "🛠️│tech-support",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523235554588758076",
+      "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235564336451714",
+      "name": "🛡️│moderator-chat",
+      "type": "GuildText",
+      "position": 1,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523235546099351703",
+      "name": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "type": "GuildCategory",
+      "position": 2,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235541959704650",
+      "name": "❓│faq",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523235539443122206",
+      "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240350922051645",
+      "name": "🌱│growing",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240430337003670",
+      "name": "🎧│Sandbox Squad",
+      "type": "GuildVoice",
+      "position": 2,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240394081566791",
+      "name": "🎧│Squad Room 1",
+      "type": "GuildVoice",
+      "position": 2,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240384040276008",
+      "name": "💻│pc-gaming",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235565347012823",
+      "name": "📋│staff-notes",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523235533944389834",
+      "name": "📢│announcements",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523235529854947338",
+      "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235557822693446",
+      "name": "📩│contact-staff",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523235554588758076",
+      "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235549404467330",
+      "name": "📸│media-share",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240411181617243",
+      "name": "🚌│fortnite",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240398758350910",
+      "name": "🛡️│mmorpg",
+      "type": "GuildText",
+      "position": 2,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235554588758076",
+      "name": "◤ ═══ SUPPORT DESK ═══ ◥",
+      "type": "GuildCategory",
+      "position": 3,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235558455775264",
+      "name": "⚠️│report-a-problem",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523235554588758076",
+      "parentName": "◤ ═══ SUPPORT DESK ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240395058970704",
+      "name": "🎧│Squad Room 2",
+      "type": "GuildVoice",
+      "position": 3,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230997498429522",
+          "type": "role",
+          "name": "Gamer",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523231000207822871",
+          "type": "role",
+          "name": "Member",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523251670547562618",
+          "type": "role",
+          "name": "Muted",
+          "allow": [],
+          "deny": [
+            "Speak"
+          ]
+        },
+        {
+          "id": "1523251667758354574",
+          "type": "role",
+          "name": "Verified",
+          "allow": [
+            "Connect",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240384983994409",
+      "name": "🎮│console-gaming",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240412309880954",
+      "name": "🎯│call-of-duty",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235535865385071",
+      "name": "🧭│start-here",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523235529854947338",
+      "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235549878685829",
+      "name": "😂│memes",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240400037351525",
+      "name": "🚗│racing",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235566521421844",
+      "name": "🚨│reports",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240351953846333",
+      "name": "🛒│gear--accessories",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235543637561354",
+      "name": "🆘│help-desk",
+      "type": "GuildText",
+      "position": 3,
+      "parentId": "1523235539443122206",
+      "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235559806599168",
+      "name": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "type": "GuildCategory",
+      "position": 4,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240400427548775",
+      "name": "⚽│sports-games",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240353195626616",
+      "name": "🍃│strains",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235537115414579",
+      "name": "🎭│roles",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523235529854947338",
+      "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240413564108861",
+      "name": "💥│warzone",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235544736206909",
+      "name": "📝│change-log",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523235539443122206",
+      "parentName": "◤ ═══ SERVER INFORMATION ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240385910935612",
+      "name": "📱│mobile-gaming",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235551333847061",
+      "name": "🧠│random-thoughts",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523235546099351703",
+      "parentName": "◤ ═══ COMMUNITY HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235567528181971",
+      "name": "🧾│audit-log",
+      "type": "GuildText",
+      "position": 4,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": [
+        {
+          "id": "1516329583685664899",
+          "type": "role",
+          "name": "@everyone",
+          "allow": [],
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "id": "1523230993681744005",
+          "type": "role",
+          "name": "Admin",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230992654012428",
+          "type": "role",
+          "name": "Founder",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        },
+        {
+          "id": "1523230995703267408",
+          "type": "role",
+          "name": "Moderator",
+          "allow": [
+            "Connect",
+            "ReadMessageHistory",
+            "SendMessages",
+            "Speak",
+            "ViewChannel"
+          ],
+          "deny": []
+        }
+      ]
+    },
+    {
+      "id": "1523240347856011406",
+      "name": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "type": "GuildCategory",
+      "position": 5,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523235538608328784",
+      "name": "✅│verification",
+      "type": "GuildText",
+      "position": 5,
+      "parentId": "1523235529854947338",
+      "parentName": "◤ ═══ WELCOME CENTER ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240354352988220",
+      "name": "🍄│mushrooms",
+      "type": "GuildText",
+      "position": 5,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240386707980360",
+      "name": "🏆│achievements",
+      "type": "GuildText",
+      "position": 5,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523231056189198346",
+      "name": "🔧│server-commands",
+      "type": "GuildText",
+      "position": 5,
+      "parentId": "1523235559806599168",
+      "parentName": "◤ ═══ STAFF OPERATIONS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240401618604045",
+      "name": "🧩│puzzle-games",
+      "type": "GuildText",
+      "position": 5,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240414923198524",
+      "name": "🪂│pubg",
+      "type": "GuildText",
+      "position": 5,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240369041571930",
+      "name": "◤ ═══ GAMING HUB ═══ ◥",
+      "type": "GuildCategory",
+      "position": 6,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240387815280720",
+      "name": "🎥│game-clips",
+      "type": "GuildText",
+      "position": 6,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240403032215632",
+      "name": "🏰│strategy-games",
+      "type": "GuildText",
+      "position": 6,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240355053572199",
+      "name": "💎│dmt",
+      "type": "GuildText",
+      "position": 6,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240415996940289",
+      "name": "🚘│rocket-league",
+      "type": "GuildText",
+      "position": 6,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240395713024094",
+      "name": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "type": "GuildCategory",
+      "position": 7,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240403912884305",
+      "name": "🃏│card-games",
+      "type": "GuildText",
+      "position": 7,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240418194624543",
+      "name": "🌈│valorant",
+      "type": "GuildText",
+      "position": 7,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240356152475788",
+      "name": "🧬│lsd",
+      "type": "GuildText",
+      "position": 7,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240388888887357",
+      "name": "😂│gaming-memes",
+      "type": "GuildText",
+      "position": 7,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240408199598161",
+      "name": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "type": "GuildCategory",
+      "position": 8,
+      "parentId": null,
+      "parentName": null,
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240357196988426",
+      "name": "🌵│mescaline",
+      "type": "GuildText",
+      "position": 8,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240404844023891",
+      "name": "👻│horror-games",
+      "type": "GuildText",
+      "position": 8,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240389622890598",
+      "name": "🔍│looking-for-group",
+      "type": "GuildText",
+      "position": 8,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240419326951564",
+      "name": "🚓│gta-online",
+      "type": "GuildText",
+      "position": 8,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240391258935396",
+      "name": "🎲│indie-games",
+      "type": "GuildText",
+      "position": 9,
+      "parentId": "1523240369041571930",
+      "parentName": "◤ ═══ GAMING HUB ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240358090117241",
+      "name": "💊│mdma",
+      "type": "GuildText",
+      "position": 9,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240420283388037",
+      "name": "🔨│rust",
+      "type": "GuildText",
+      "position": 9,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240405733347469",
+      "name": "🕹️│retro-games",
+      "type": "GuildText",
+      "position": 9,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240359428096000",
+      "name": "🌳│ibogaine",
+      "type": "GuildText",
+      "position": 10,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240407369257061",
+      "name": "🥽│vr-gaming",
+      "type": "GuildText",
+      "position": 10,
+      "parentId": "1523240395713024094",
+      "parentName": "◤ ═══ COMPETITIVE GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240421621498017",
+      "name": "🦖│ark",
+      "type": "GuildText",
+      "position": 10,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240360619413545",
+      "name": "🧠│psychedelic-discussion",
+      "type": "GuildText",
+      "position": 11,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240422703497357",
+      "name": "🚀│helldivers-2",
+      "type": "GuildText",
+      "position": 11,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240423613665320",
+      "name": "🏴│sea-of-thieves",
+      "type": "GuildText",
+      "position": 12,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240361865121872",
+      "name": "📚│research--studies",
+      "type": "GuildText",
+      "position": 12,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240363379134484",
+      "name": "🎨│trip-art",
+      "type": "GuildText",
+      "position": 13,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240424695660574",
+      "name": "🧟│dayz",
+      "type": "GuildText",
+      "position": 13,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240365237473320",
+      "name": "📸│smoke--setup-pictures",
+      "type": "GuildText",
+      "position": 14,
+      "parentId": "1523240347856011406",
+      "parentName": "◤ ═══ CANNABIS & PSYCHEDELICS ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240425798762596",
+      "name": "🚂│factorio",
+      "type": "GuildText",
+      "position": 14,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    },
+    {
+      "id": "1523240426847342622",
+      "name": "🌌│no-mans-sky",
+      "type": "GuildText",
+      "position": 15,
+      "parentId": "1523240408199598161",
+      "parentName": "◤ ═══ FEATURED GAMES ═══ ◥",
+      "permissionOverwrites": []
+    }
+  ]
+}
