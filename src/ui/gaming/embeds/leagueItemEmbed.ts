@@ -1,5 +1,5 @@
 import { EmbedBuilder } from "discord.js";
-import { LeagueItem, LeagueItemSourceLink } from "../../../services/gaming/index.js";
+import { LeagueItem, LeagueItemBuildComponent, LeagueItemSourceLink } from "../../../services/gaming/index.js";
 import { leagueItemColor } from "../colors.js";
 import { gamingEmojis } from "../emojis.js";
 import {
@@ -8,6 +8,7 @@ import {
   cleanDataDragonText,
   discordLimits,
   italic,
+  spacedLines,
   truncateDiscord
 } from "../markdown.js";
 
@@ -33,6 +34,7 @@ const statLabels: Record<string, string> = {
 };
 
 const categoryLabels: Record<string, string> = {
+  AbilityHaste: "Ability Haste",
   CooldownReduction: "Ability Haste",
   NonbootsMovement: "Movement Speed",
   AttackSpeed: "Attack Speed",
@@ -46,7 +48,17 @@ const categoryLabels: Record<string, string> = {
   Boots: "Boots",
   Consumable: "Consumable",
   Trinket: "Trinket",
-  Vision: "Vision"
+  Vision: "Vision",
+  Mana: "Mana",
+  ManaRegen: "Mana Regen",
+  HealthRegen: "Health Regen",
+  LifeSteal: "Life Steal",
+  SpellVamp: "Omnivamp",
+  MagicPenetration: "Magic Penetration",
+  ArmorPenetration: "Armor Penetration",
+  Slow: "Slow",
+  Aura: "Aura",
+  Active: "Active"
 };
 
 const knownMapLabels: Record<string, string> = {
@@ -80,12 +92,35 @@ function formatStats(item: LeagueItem): string {
   );
 }
 
+function componentTotalGold(components: LeagueItemBuildComponent[]): number {
+  return components.reduce((total, component) => total + (component.totalGold ?? 0), 0);
+}
+
 function formatGold(item: LeagueItem): string {
+  const components = componentTotalGold(item.fromItems);
+  const recipeCost = item.fromItems.length > 0
+    ? Math.max(0, item.gold.total - components)
+    : item.gold.base;
+
   return [
     `${bold("Total:")} ${item.gold.total}g`,
-    `${bold("Base:")} ${item.gold.base}g`,
+    `${bold("Components:")} ${components}g`,
+    `${bold("Recipe:")} ${recipeCost}g`,
     `${bold("Sell:")} ${item.gold.sell}g`
   ].join("\n");
+}
+
+function formatBuildComponents(components: LeagueItemBuildComponent[]): string {
+  if (components.length === 0) {
+    return "*None*";
+  }
+
+  return components
+    .map((component) => {
+      const cost = component.totalGold === undefined ? "" : ` - ${component.totalGold}g`;
+      return `• ${bold(component.name)}${cost}`;
+    })
+    .join("\n");
 }
 
 function formatMaps(item: LeagueItem): string {
@@ -105,7 +140,9 @@ function formatMaps(item: LeagueItem): string {
 }
 
 function formatCategories(item: LeagueItem): string {
-  const categories = item.tags.map((tag) => categoryLabels[tag] ?? tag);
+  const categories = item.tags
+    .map((tag) => categoryLabels[tag])
+    .filter((tag): tag is string => Boolean(tag));
 
   return truncateDiscord(bulletList([...new Set(categories)]));
 }
@@ -186,7 +223,7 @@ function itemDescription(item: LeagueItem): string {
     item.plaintext ? italic(item.plaintext) : ""
   ].filter(Boolean);
 
-  return truncateDiscord(lines.join("\n"), discordLimits.embedDescription);
+  return truncateDiscord(spacedLines(lines), discordLimits.embedDescription);
 }
 
 export function buildLeagueItemEmbed(item: LeagueItem): EmbedBuilder {
@@ -197,12 +234,12 @@ export function buildLeagueItemEmbed(item: LeagueItem): EmbedBuilder {
     .setThumbnail(item.imageUrl)
     .setColor(leagueItemColor(item))
     .addFields(
-      { name: `${gamingEmojis.gold} Gold`, value: truncateDiscord(formatGold(item)), inline: true },
-      { name: `${gamingEmojis.stats} Stats`, value: formatStats(item), inline: true },
-      { name: `${gamingEmojis.buildsFrom} Builds From`, value: truncateDiscord(bulletList(item.fromNames)), inline: true },
-      { name: `${gamingEmojis.buildsInto} Builds Into`, value: truncateDiscord(bulletList(item.intoNames)), inline: true },
-      { name: `${gamingEmojis.maps} Available On`, value: truncateDiscord(formatMaps(item)), inline: true },
-      { name: `${gamingEmojis.categories} Categories`, value: formatCategories(item), inline: true }
+      { name: `${gamingEmojis.gold} Gold`, value: truncateDiscord(formatGold(item)) },
+      { name: `${gamingEmojis.stats} Stats`, value: formatStats(item) },
+      { name: `${gamingEmojis.buildsFrom} Builds From`, value: truncateDiscord(formatBuildComponents(item.fromItems)) },
+      { name: `${gamingEmojis.buildsInto} Builds Into`, value: truncateDiscord(bulletList(item.intoNames)) },
+      { name: `${gamingEmojis.maps} Available On`, value: truncateDiscord(formatMaps(item)) },
+      { name: `${gamingEmojis.categories} Categories`, value: formatCategories(item) }
     )
     .setFooter({ text: `RypeBot Gaming • League of Legends • Data Dragon • Item ID ${item.id}` })
     .setTimestamp();

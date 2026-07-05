@@ -26,10 +26,14 @@ function playerErrorMessage(error: LeagueServiceError): string {
       return "RypeBot is missing RIOT_API_KEY, so League player lookup is not configured yet.";
     case "invalid-region":
       return `That is not a supported League region. Use one of: ${riotPlatformRegions.join(", ")}.`;
+    case "invalid-riot-id":
+      return "That Riot ID format does not look right. Use `GameName#TagLine`, or provide game name and tagline separately.";
     case "account-not-found":
       return "I could not find that Riot ID. Check the game name and tag line, then try again.";
     case "rate-limited":
       return "Riot is rate limiting requests right now. Please try again shortly.";
+    case "match-data-unavailable":
+      return "The player was found, but Riot match data is private or unavailable right now.";
     case "riot-unavailable":
       return "Riot API is unavailable or returned a failure right now. Please try again later.";
     case "item-not-found":
@@ -68,6 +72,14 @@ function buildIncompleteRiotIdEmbed(player: string, region: string): EmbedBuilde
     .addFields(fields);
 }
 
+function configuredDefaultRegion(): string {
+  return process.env.LOL_DEFAULT_REGION ?? "na1";
+}
+
+function configuredDefaultTagline(): string | undefined {
+  return process.env.LOL_DEFAULT_TAGLINE;
+}
+
 export const lolPlayerCommand = {
   data: new SlashCommandBuilder()
     .setName("lol-player")
@@ -76,45 +88,40 @@ export const lolPlayerCommand = {
     .addStringOption((option) =>
       option
         .setName("player")
-        .setDescription("Full Riot ID, such as SomeName#NA1 or Some Name#1234.")
+        .setDescription("Full Riot ID, such as SomeName#NA1, or just the game name.")
         .setRequired(true)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("tagline")
+        .setDescription("Riot ID tagline, such as NA1, EUW, KR, or 1234.")
+        .setRequired(false)
     )
     .addStringOption((option) =>
       option
         .setName("region")
         .setDescription("League platform region, such as na1, euw1, kr, or oc1.")
-        .setRequired(true)
+        .setRequired(false)
         .addChoices(...riotPlatformRegions.map((region) => ({ name: region, value: region })))
     ),
 
   async execute(interaction: ChatInputCommandInteraction): Promise<void> {
     const player = interaction.options.getString("player", true);
-    const region = interaction.options.getString("region", true);
+    const explicitTagline = interaction.options.getString("tagline");
+    const region = interaction.options.getString("region") ?? configuredDefaultRegion();
     const parsedPlayer = parseRiotIdInput(player);
+    const tagLine = parsedPlayer.tagLine ?? explicitTagline ?? configuredDefaultTagline();
 
     await interaction.deferReply();
 
-    if (!parsedPlayer.isComplete || !parsedPlayer.tagLine) {
+    if (!tagLine) {
       await interaction.editReply({ embeds: [buildIncompleteRiotIdEmbed(player, region)] });
       return;
     }
 
     try {
-      const profile = await leaguePlayerService.getPlayerProfile(parsedPlayer.gameName, parsedPlayer.tagLine, region);
-      const embed = new EmbedBuilder()
-        .setTitle(`${profile.account.gameName}#${profile.account.tagLine}`)
-        .setDescription("League of Legends player profile")
-        .setThumbnail(profile.profileIconUrl)
-        .setColor(0xc89b3c)
-        .addFields(
-          { name: "Region", value: profile.platformRegion, inline: true },
-          { name: "Account Route", value: profile.regionalRoute, inline: true },
-          { name: "Summoner Level", value: `${profile.summoner.summonerLevel}`, inline: true },
-          { name: "PUUID", value: `\`${profile.account.puuid}\`` }
-        )
-        .setFooter({ text: "Riot ID lookup via Account-V1, League profile via PUUID" });
-
-      await interaction.editReply({ embeds: [embed] });
+      const profile = await leaguePlayerService.lookupPlayer(parsedPlayer.gameName, tagLine, region);
+      await interaction.editReply({ embeds: leaguePlayerService.buildPlayerEmbedPages(profile) });
     } catch (error) {
       if (error instanceof LeagueServiceError) {
         await interaction.editReply(playerErrorMessage(error));

@@ -4,10 +4,19 @@ export { LeagueItemService } from "./league/leagueItemService.js";
 export { LeaguePlayerService } from "./league/leaguePlayerService.js";
 export type {
   LeagueItem,
+  LeagueItemBuildComponent,
   LeagueItemSourceLink,
+  ChampionMasterySummary,
+  LeagueExternalProfileLinks,
   LeaguePlayerProfile,
   LeagueServiceErrorCode,
   LeagueSummoner,
+  LiveGameStatus,
+  PlayerLookupResult,
+  PlayerScoutingSummary,
+  RankedEntry,
+  RecentMatchSummary,
+  SummonerProfile,
   RiotAccount
 } from "./league/leagueTypes.js";
 export { CommunityDragonItemProvider } from "./league/providers/communityDragonItemProvider.js";

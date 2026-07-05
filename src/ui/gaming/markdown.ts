@@ -15,6 +15,10 @@ export function bulletList(values: string[]): string {
   return values.length > 0 ? values.map((value) => `• ${value}`).join("\n") : "*None*";
 }
 
+export function spacedLines(values: string[]): string {
+  return values.filter(Boolean).join("\n\n");
+}
+
 export function bold(value: string): string {
   return `**${value}**`;
 }

@@ -1,5 +1,5 @@
 import { LeagueDataDragonService } from "../leagueDataDragonService.js";
-import { LeagueItem } from "../leagueTypes.js";
+import { LeagueItem, LeagueItemBuildComponent } from "../leagueTypes.js";
 import {
   DataDragonItemResult,
   LeagueItemLookup,
@@ -29,6 +29,17 @@ function resolveItemNames(itemIds: string[] | undefined, items: Record<string, {
   return (itemIds ?? []).map((itemId) => items[itemId]?.name ?? itemId);
 }
 
+function resolveBuildComponents(
+  itemIds: string[] | undefined,
+  items: Record<string, { name: string; gold?: { total: number } }>
+): LeagueItemBuildComponent[] {
+  return (itemIds ?? []).map((itemId) => ({
+    id: itemId,
+    name: items[itemId]?.name ?? itemId,
+    totalGold: items[itemId]?.gold?.total
+  }));
+}
+
 export class DataDragonItemProvider implements LeagueItemPrimaryProvider {
   constructor(private readonly dataDragon = new LeagueDataDragonService()) {}
 
@@ -56,8 +67,10 @@ export class DataDragonItemProvider implements LeagueItemPrimaryProvider {
       stats: item.stats ?? {},
       from: item.from ?? [],
       fromNames: resolveItemNames(item.from, items.data),
+      fromItems: resolveBuildComponents(item.from, items.data),
       into: item.into ?? [],
       intoNames: resolveItemNames(item.into, items.data),
+      intoItems: resolveBuildComponents(item.into, items.data),
       maps: item.maps ?? {},
       tags: item.tags ?? [],
       imageUrl: this.dataDragon.itemImageUrl(version, item.image.full),
