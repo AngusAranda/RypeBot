@@ -75,6 +75,45 @@ Current deployment modules include:
 
 ---
 
+## Gaming Integrations
+
+RypeBot includes a modular gaming service layer at `src/services/gaming` so individual games can share reusable API clients while keeping game-specific behavior separate.
+
+Current integration:
+
+- League of Legends
+
+League slash commands:
+
+- `/lol-item item` looks up League item details from Riot Data Dragon and returns source links.
+- `/lol-player player region` resolves a full Riot ID through Account-V1, then uses the returned PUUID for League profile lookup.
+
+League item provider architecture:
+
+- Data Dragon is the source of truth for item name, description, gold, stats, build paths, tags, maps, and icon.
+- Community Dragon is optional enrichment for raw data and asset links.
+- League Wiki and Fandom links are generated from the normalized item name for convenience.
+- Wiki providers do not scrape page content, and `/lol-item` does not depend on unofficial sources.
+- Providers are independent so future integrations can add sources such as Lolalytics, OP.GG, U.GG, or other game-specific providers.
+
+League player examples:
+
+- `/lol-player player: SomeName#NA1 region: na1`
+- `/lol-player player: Some Name#1234 region: na1`
+
+Riot IDs require both the game name and tagline because names are not globally unique. Name-only player input returns a helpful prompt instead of guessing.
+
+Supported League platform regions:
+
+- Americas route: `na1`, `br1`, `la1`, `la2`
+- Europe route: `euw1`, `eun1`, `tr1`, `ru`
+- Asia route: `kr`, `jp1`
+- SEA route: `oc1`, `ph2`, `sg2`, `th2`, `tw2`, `vn2`
+
+League player lookup requires `RIOT_API_KEY` in the local `.env`. Keep real Riot keys out of commits and only document the variable in `.env.example`.
+
+---
+
 # 🛠️ Technology Stack
 
 | Component | Technology |
@@ -136,9 +175,10 @@ npm install
 Create a `.env`
 
 ```env
-DISCORD_TOKEN=YOUR_TOKEN
+DISCORD_BOT_TOKEN=YOUR_TOKEN
 CLIENT_ID=YOUR_CLIENT_ID
 GUILD_ID=YOUR_SERVER_ID
+RIOT_API_KEY=YOUR_RIOT_API_KEY
 ```
 
 Deploy slash commands.

@@ -4,6 +4,8 @@ import { auditServerCommand } from "./commands/auditServer.js";
 import { deployCommand } from "./commands/deploy.js";
 import { deployEntertainmentCommand } from "./commands/deployEntertainment.js";
 import { deployPermissionsCommand } from "./commands/deployPermissions.js";
+import { lolItemCommand } from "./commands/gaming/league/lolItem.js";
+import { lolPlayerCommand } from "./commands/gaming/league/lolPlayer.js";
 import { wipeChannelsCommand } from "./commands/wipeChannels.js";
 
 const token = process.env.DISCORD_BOT_TOKEN;
@@ -31,6 +33,8 @@ client.on(Events.InteractionCreate, async (interaction: Interaction) => {
     [deployCommand.data.name, deployCommand.execute],
     [deployEntertainmentCommand.data.name, deployEntertainmentCommand.execute],
     [deployPermissionsCommand.data.name, deployPermissionsCommand.execute],
+    [lolItemCommand.data.name, lolItemCommand.execute],
+    [lolPlayerCommand.data.name, lolPlayerCommand.execute],
     [wipeChannelsCommand.data.name, wipeChannelsCommand.execute]
   ]);
   const execute = commands.get(interaction.commandName);

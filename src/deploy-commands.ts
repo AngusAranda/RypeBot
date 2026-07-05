@@ -4,6 +4,8 @@ import { auditServerCommand } from "./commands/auditServer.js";
 import { deployCommand } from "./commands/deploy.js";
 import { deployEntertainmentCommand } from "./commands/deployEntertainment.js";
 import { deployPermissionsCommand } from "./commands/deployPermissions.js";
+import { lolItemCommand } from "./commands/gaming/league/lolItem.js";
+import { lolPlayerCommand } from "./commands/gaming/league/lolPlayer.js";
 import { wipeChannelsCommand } from "./commands/wipeChannels.js";
 
 type DiscordApplication = {
@@ -31,6 +33,8 @@ const commands = [
   deployCommand.data.toJSON(),
   deployEntertainmentCommand.data.toJSON(),
   deployPermissionsCommand.data.toJSON(),
+  lolItemCommand.data.toJSON(),
+  lolPlayerCommand.data.toJSON(),
   wipeChannelsCommand.data.toJSON()
 ];
 const rest = new REST({ version: "10" }).setToken(token);
