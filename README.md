@@ -87,6 +87,18 @@ League slash commands:
 
 - `/lol-item item` looks up League item details from Riot Data Dragon and returns source links.
 - `/lol-player player tagline region` resolves a Riot ID through Account-V1, then builds a multi-embed player report from Summoner-V4, League-V4, Champion-Mastery-V4, Match-V5, and live game status when available.
+- `/replay-latest` is owner-only and shows the latest completed match for the configured Riot account.
+- `/render-replay match_id` is owner-only and creates a queued replay render job record. If `match_id` is omitted, RypeBot uses the latest completed match.
+- `/render-status` is owner-only and shows the current in-memory replay render queue.
+- `/render-cancel` is owner-only and cancels the active or pending replay render job when one exists.
+
+League Replay Render MVP:
+
+- The replay render foundation is intentionally queue-only for now.
+- Riot Account-V1 resolves the configured Riot ID to a PUUID.
+- Riot Match-V5 fetches the latest match IDs and match details.
+- Rendering, OBS automation, FFmpeg orchestration, League Client control, League Director control, and YouTube upload are placeholder future integrations.
+- The queue is currently in-memory and resets when the bot process restarts.
 
 League item provider architecture:
 
@@ -113,6 +125,15 @@ Supported League platform regions:
 - SEA route: `oc1`, `ph2`, `sg2`, `th2`, `tw2`, `vn2`
 
 League player lookup requires `RIOT_API_KEY` in the local `.env`. Optional defaults are `LOL_DEFAULT_REGION`, `LOL_DEFAULT_REGIONAL_ROUTING`, and `LOL_DEFAULT_TAGLINE`. Keep real Riot keys out of commits and only document variables in `.env.example`.
+
+League replay render commands require:
+
+- `OWNER_DISCORD_ID`: Discord user ID allowed to run replay/render commands. If missing, replay/render commands fail closed.
+- `RIOT_API_KEY`: Riot developer API key.
+- `RIOT_REGION`: Riot regional route for Account-V1 and Match-V5. Defaults to `americas`.
+- `RIOT_PLATFORM`: League platform route. Defaults to `na1`.
+- `RIOT_GAME_NAME`: configured Riot account game name. Defaults to `AngusAranda`.
+- `RIOT_TAG_LINE`: configured Riot account tagline. Defaults to `9787`.
 
 ---
 
@@ -181,6 +202,11 @@ DISCORD_BOT_TOKEN=YOUR_TOKEN
 CLIENT_ID=YOUR_CLIENT_ID
 GUILD_ID=YOUR_SERVER_ID
 RIOT_API_KEY=YOUR_RIOT_API_KEY
+OWNER_DISCORD_ID=YOUR_DISCORD_USER_ID
+RIOT_REGION=americas
+RIOT_PLATFORM=na1
+RIOT_GAME_NAME=AngusAranda
+RIOT_TAG_LINE=9787
 ```
 
 Deploy slash commands.

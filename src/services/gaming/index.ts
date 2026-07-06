@@ -2,6 +2,7 @@ export { LeagueDataDragonService } from "./league/leagueDataDragonService.js";
 export { LeagueItemAggregator } from "./league/leagueItemAggregator.js";
 export { LeagueItemService } from "./league/leagueItemService.js";
 export { LeaguePlayerService } from "./league/leaguePlayerService.js";
+export { LeagueReplayService } from "./league/leagueReplayService.js";
 export type {
   LeagueItem,
   LeagueItemBuildComponent,
